@@ -7,4 +7,4 @@ $body = @{
     "password" = "Test@1234"
 } | ConvertTo-Json
 
-Invoke-WebRequest -Uri "http://localhost:8000/register" -Method POST -Headers $headers -Body $body
+Invoke-WebRequest -Uri "http://localhost:8001/register" -Method POST -Headers $headers -Body $body

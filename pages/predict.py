@@ -6,7 +6,7 @@ from PIL import Image
 from streamlit_option_menu import option_menu
 
 # FastAPI backend URL
-backend_url = "http://localhost:8000"
+backend_url = "http://localhost:8001"
 
 def main():
     st.title("Predict")

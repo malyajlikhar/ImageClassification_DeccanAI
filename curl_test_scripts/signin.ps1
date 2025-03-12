@@ -3,4 +3,4 @@ $headers = @{
     "Authorization" = "Basic $credPair"
 }
 
-Invoke-WebRequest -Uri "http://localhost:8000/signin" -Method POST -Headers $headers
+Invoke-WebRequest -Uri "http://localhost:8001/signin" -Method POST -Headers $headers

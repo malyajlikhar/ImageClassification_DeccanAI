@@ -33,7 +33,7 @@ Replace <image_path> with the path to the input image.
 - To run the FastAPI backend for the prediction API, use the following command:
 
   ```bash
-  uvicorn app:app --reload
+  uvicorn app:app --reload --host 0.0.0.0 --port 8001
 ## Frontend
 - To run the Streamlit frontend for the prediction API, use the following command:
 
@@ -44,7 +44,7 @@ Replace <image_path> with the path to the input image.
 
 Run the FastAPI Server
   ```bash
-  uvicorn app:app --reload
+  uvicorn app:app --reload --host 0.0.0.0 --port 8001
 ```
 - Test Scripts
 

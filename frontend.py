@@ -3,7 +3,7 @@ import requests
 import base64
 
 # FastAPI backend URL
-backend_url = "http://localhost:8000"
+backend_url = "http://localhost:8001"
 
 def main():
     st.title("Sign In")
