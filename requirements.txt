@@ -9,5 +9,6 @@ pydantic
 scikit-learn
 python-multipart
 streamlit
+streamlit_option_menu
 requests
 opencv-python
