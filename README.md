@@ -29,6 +29,11 @@ After running the training script, it will generate x_test.npy and y_test.npy fi
 Replace <image_path> with the path to the input image.
 
 ## Running the Prediction API
+
+## Azure deployed web app
+```bash
+https://fashionimageprediction-hza3fzava4hwcbak.canadacentral-01.azurewebsites.net/
+```
 ## Backend
 - To run the FastAPI backend for the prediction API, use the following command:
 
