@@ -45,10 +45,10 @@ input_layer = Input(shape=(32, 32, 3))
 # Load MobileNetV2 as base model
 base_model = MobileNet(weights="imagenet", include_top=False, input_tensor=input_layer)
 
-# Add Dense layer without regularization
+# Add Dense layer
 x = Flatten()(base_model.output)
-x = Dense(256, activation="relu")(x)  # Remove L2 regularization
-output = Dense(10, activation="softmax")(x)  # Output layer without L2 regularization
+x = Dense(256, activation="relu")(x)
+output = Dense(10, activation="softmax")(x)  
 
 # Create the full model
 model = Model(inputs=input_layer, outputs=output)
