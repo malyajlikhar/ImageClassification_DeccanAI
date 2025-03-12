@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+redis
+bcrypt
+pillow
+tensorflow
+numpy
+pydantic
+scikit-learn
+python-multipart
+streamlit
+requests
+opencv-python
