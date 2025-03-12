@@ -8,14 +8,11 @@ WORKDIR /app
 COPY . /app
 
 # Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Expose the ports that your FastAPI and Streamlit apps run on
 EXPOSE 8000
 EXPOSE 8001
 
-# Start FastAPI in the background
-RUN nohup uvicorn app:app --host 0.0.0.0 --port 8001 &
-
-# Start Streamlit
-CMD ["streamlit", "run", "frontend.py", "--server.port", "8000", "--server.address", "0.0.0.0"]
+# Start FastAPI on port 8000 and Streamlit on port 8001
+CMD ["sh", "-c", "nohup uvicorn app:app --host 0.0.0.0 --port 8000 & streamlit run frontend.py --server.port 8001 --server.address 0.0.0.0"]
